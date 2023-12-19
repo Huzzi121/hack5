@@ -16,8 +16,13 @@ double destinationLatitude,double destinationLongitude)
     originLatitude = degreesToRadians(originLatitude);
     originlongitude = degreesToRadians(originlongitude);
     destinationLatitude = degreesToRadians(destinationLatitude);
-    destinationLongitude = degreesToRadians(destinationLongitude)
+    destinationLongitude = degreesToRadians(destinationLongitude);
 
-    
+    //dl=deltalongitude.
 
+    double dl=destinationLongitude-originlongitude;
+
+    double distance=acos(sin(originLatitude)*sin(destinationLatitude)+cos(originLatitude)*cos(destinationLatitude)*cos(dl))*earthR;
+
+    return distance;
 }
