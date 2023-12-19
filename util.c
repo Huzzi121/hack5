@@ -18,6 +18,6 @@ double destinationLatitude,double destinationLongitude)
     destinationLatitude = degreesToRadians(destinationLatitude);
     destinationLongitude = degreesToRadians(destinationLongitude)
 
-
+    
 
 }
